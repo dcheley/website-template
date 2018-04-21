@@ -24,6 +24,12 @@
   margin: 30px auto;
 }
 
+.half {
+  float: left;
+  width: 50%;
+  margin: auto;
+}
+
 .small-gallery {
   height: 100px;
 }
@@ -36,4 +42,12 @@
 .notice, .alert {
   text-align: center;
   margin-top: 30px;
+}
+
+#footer {
+  background-color: lightgray;
+}
+
+.footer-link {
+  margin: auto 10px;
 }

@@ -1,5 +1,19 @@
 @import "bootstrap";
 
+.nav-link {
+  color: white !important;
+  text-decoration: none;
+  text-align: right;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.navbar-nav .nav-link {
+  padding-right: 20px;
+}
+
 #center-row {
   text-align: center;
   margin: 25px auto 25px;
@@ -17,4 +31,8 @@
 .left-align-but-center {
   text-align: left;
   display: inline-block;
+}
+
+.notice, .alert {
+  text-align: center;
 }

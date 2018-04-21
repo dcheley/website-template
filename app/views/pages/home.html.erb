@@ -1,4 +1,12 @@
 <div class="container">
+  <nav class="navbar navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">LOGO</a>
+    <ul class="navbar-nav">
+      <li class='nav-item'><%= link_to 'Sign In', new_business_session_url, class:'nav-link' %></li>
+      <li class='nav-item'><%= link_to 'Sign Up', new_business_registration_url, class:'nav-link' %></li>
+    </ul>
+  </nav>
+
   <div class="input-group">
     <span class="glyphicon glyphicon-search"></span>
     <input type="text" class="form-control" aria-label="Text input for searching businesses">

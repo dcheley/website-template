@@ -44,6 +44,20 @@
   margin-top: 30px;
 }
 
+.parallax {
+  /* The image used */
+  background-image: url("missing.png");
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #footer {
   background-color: lightgray;
 }

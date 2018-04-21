@@ -12,10 +12,12 @@
   </nav>
 
   <div class="parallax">
-    <div class="input-group">
-      <span class="glyphicon glyphicon-search"></span>
-      <input type="text" class="form-control" aria-label="Text input for searching businesses">
-    </div>
+      <%= form_tag(businesses_url, :method => "get", class: "form-group") do %>
+        <%= text_field_tag :search, params[:search], placeholder: "Check out things to do in Toronto", required: true, class:"form-control" %>
+        <button type="submit" class="search-button">
+          SUBMIT
+        </button>
+      <% end %>
   </div>
 
   <h5 class="center-title">Discover</h5>

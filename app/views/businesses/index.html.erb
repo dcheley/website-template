@@ -1,0 +1,13 @@
+<div class="container">
+  <% if params[:search] %>
+    <h5 class="search-counter"><b style="color: #337ab7;"><%= @businesses.count %></b> Businesses found:</h5>
+  <% end %>
+
+  <% @businesses.each do |b| %>
+    <%= b.email %>
+  <% end %>
+
+  <% if @businesses.blank? %>
+    <% flash[:alert] = "No results found for '#{params[:search]}'." %>
+  <% end %>
+</div>

@@ -2,6 +2,10 @@ class BusinessesController < ApplicationController
   before_action :authenticate_business!
 
   def index
+    @businesses = Business.all
+    if params[:search]
+      @businesses = Business.search(params[:search]).order("email ASC").distinct
+    end
   end
 
   private

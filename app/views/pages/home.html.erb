@@ -1,1 +1,52 @@
-<p>test</p>
+<div class="container">
+  <div class="input-group">
+    <span class="glyphicon glyphicon-search"></span>
+    <input type="text" class="form-control" aria-label="Text input for searching businesses">
+  </div>
+
+  <h5 class="center-title">Discover</h5>
+
+  <div class="row" id="center-row">
+    <div class="col-sm">
+      <%= image_tag 'missing.png', class:'small-gallery' %>
+    </div>
+    <div class="col-sm">
+      <%= image_tag 'missing.png', class:'small-gallery' %>
+    </div>
+    <div class="col-sm">
+      <%= image_tag 'missing.png', class:'small-gallery' %>
+    </div>
+    <div class="col-sm">
+      <%= image_tag 'missing.png', class:'small-gallery' %>
+    </div>
+  </div>
+
+  <div class="row" id="center-row">
+    <div class="col-sm">
+      <%= image_tag 'missing.png', class:'small-gallery' %>
+    </div>
+    <div class="col-sm">
+      <%= image_tag 'missing.png', class:'small-gallery' %>
+    </div>
+    <div class="col-sm">
+      <%= image_tag 'missing.png', class:'small-gallery' %>
+    </div>
+    <div class="col-sm">
+      <%= image_tag 'missing.png', class:'small-gallery' %>
+    </div>
+  </div>
+
+  <h5 class="center-title">Add your Business</h5>
+  <p class="center-title">
+    We help our partners increase revenues, incrase customers, manage bookings,
+    streamline operations, and so much more.
+  </p>
+  <p class="center-title">
+    It's free to join, requires no contact, and easily expands public awareness
+    to your offering with no extra effort or costs.
+  </p>
+
+  <div id="center-row">
+    <%= link_to 'Sign Up', new_business_registration_url, class:'submit' %>
+  </div>
+</div>
